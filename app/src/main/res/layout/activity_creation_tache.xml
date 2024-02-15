@@ -14,14 +14,6 @@
         android:background="@color/black"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.8"
-            android:src="@drawable/equalizer_fill"
-            android:layout_gravity="center"
-            />
-
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -32,9 +24,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
-            android:src="@drawable/add_circle_line"
+            android:src="@drawable/close_line"
             android:layout_gravity="center"
-            android:onClick="creation"/>
+            android:onClick="fermer"/>
 
     </LinearLayout>
 
@@ -42,17 +34,21 @@
 
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:background="#DA3B35"
+        android:background="#0278B5"
         android:fontFamily="@font/istok_web"
         android:gravity="center_vertical"
-        android:text="\t\tListe de vos tâches"
+        android:text="\t\tCréation d'une tâche"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background=""
+    >
+
+</LinearLayout>
 </LinearLayout>
