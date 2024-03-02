@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="basse">Low</string>
+    <string name="moyenne">Average</string>
+    <string name="haute">High</string>
+    <string name="certains_champs_ne_sont_pas_remplis">Some fields are not filled !</string>
+    <string name="creation">Creation</string>
+    <string name="tous">All</string>
+    <string name="active">Active</string>
+    <string name="fermer">Closed</string>
+    <string name="auteur">"Author : "</string>
+    <string name="description">"Description : "</string>
+    <string name="date_de_cr_ation">"Date of creation : "</string>
+    <string name="date_ch_ance">"Date deadline : "</string>
+    <string name="jours_restant">"Days remaining : "</string>
+    <string name="minutes_restantes">"Minutes remaining : "</string>
+    <string name="temps_restant_en_retard">Time remaining : LATE</string>
+    <string name="heures_restantes">"Hours remaining : "</string>
+    <string name="priorit_basse">Priority : Low</string>
+    <string name="priorit_moyenne">Priority : Average</string>
+    <string name="priorit_haute">Priority : High</string>
+    <string name="r_ouvrir_la_t_che">Make task active</string>
+    <string name="la_t_che_est_d_sormais_active">The task is now active !</string>
+    <string name="prioriter">Priority</string>
+    <string name="t_tcr_ation_d_une_t_che">\t\tCreate Task</string>
+    <string name="titre_de_votre_t_che">Title of your task</string>
+    <string name="titre">Title</string>
+    <string name="auteur_de_la_demande">Author of the task</string>
+    <string name="importance">Priority</string>
+    <string name="choisir_votre_date">Choose a date</string>
+    <string name="ajouter_une_t_che">Add Task</string>
+    <string name="t_tliste_de_vos_t_ches">\t\tList of your task</string>
+    <string name="t_tmodification_d_une_t_che">\t\tModify task</string>
+    <string name="modifier_une_t_che">Modify task</string>
+    <string name="ajouter_mon_calendrier">Add to calendar</string>
+    <string name="modifier">Modify</string>
+    <string name="filtrer">Filter</string>
+    <string name="fermer2">Close</string>
+</resources>

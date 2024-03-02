@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="28dp"
+        android:backgroundTint="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="12dp"
+        app:contentPadding="16dp"
+        >
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon Titre"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <Button
+                android:id="@+id/cardAjouterCalendrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ajouter_mon_calendrier" />
+            <TextView
+                android:id="@+id/cardAuteur"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardDescription"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardDateCreation"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardDateEcheance"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardImportance"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardTempsRestant"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/cardEtat"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <Button
+                android:id="@+id/cardButtonModifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lowPrio"
+                android:text="@string/modifier" />
+            <Button
+                android:id="@+id/cardButtonFermer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fermer2" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+</LinearLayout>

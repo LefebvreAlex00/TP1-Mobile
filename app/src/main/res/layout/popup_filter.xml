@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="28dp"
+            android:backgroundTint="#F5F5F5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp"
+            app:contentPadding="16dp"
+            >
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filtrer"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+                <Spinner
+                    android:id="@+id/spinnerOrdre"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:dropDownVerticalOffset="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/border_edit_text"
+                    />
+                <Spinner
+                    android:id="@+id/spinnerEtatFiltre"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:dropDownVerticalOffset="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/border_edit_text"
+                    />
+                <Spinner
+                    android:id="@+id/spinnerImportanceFiltre"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:dropDownVerticalOffset="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/border_edit_text"
+                    />
+
+                <Button
+                    android:layout_marginTop="24dp"
+                    android:id="@+id/cardButtonFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/lowPrio"
+                    android:text="@string/modifier" />
+                <Button
+                    android:id="@+id/cardButtonFermerFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fermer2" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

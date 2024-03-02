@@ -21,6 +21,7 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:layout_marginEnd="20dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
@@ -37,18 +38,146 @@
         android:background="#0278B5"
         android:fontFamily="@font/istok_web"
         android:gravity="center_vertical"
-        android:text="\t\tCréation d'une tâche"
+        android:text="@string/t_tcr_ation_d_une_t_che"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold" />
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background=""
     >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/titre_de_votre_t_che"/>
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/creationTitre"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/border_edit_text"
+        android:hint="@string/titre"
+        />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/auteur_de_la_demande"/>
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/creationAuteur"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/border_edit_text"
+        android:hint="@string/auteur"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/description"/>
+    <EditText
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:maxLength="128"
+        android:textColor="@color/black"
+        android:id="@+id/creationDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@drawable/border_edit_text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/date_ch_ance"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/prioriter"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:backgroundTint="@color/lowPrio"
+        android:id="@+id/date"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/choisir_votre_date"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:textColor="@color/black"
+        android:dropDownVerticalOffset="40dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/border_edit_text"
+        />
 </LinearLayout>
+
+    <Button
+        android:onClick="ajouter"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter_une_t_che"
+        android:backgroundTint="@color/lowPrio"
+        />
+</LinearLayout>
+</ScrollView>
 </LinearLayout>

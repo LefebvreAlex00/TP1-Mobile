@@ -16,7 +16,7 @@
       android:text=" "
       android:layout_width="5dp"
       android:layout_height="65dp"
-      android:background= "#B57977"
+      android:background= "@color/highPrio"
     />
 
     <LinearLayout
@@ -27,11 +27,13 @@
         android:background="@drawable/border"
         >
         <TextView
+            android:id="@+id/nomTache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Detruire la database par Alex Lefebvre" />
 
         <TextView
+            android:id="@+id/dateTache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date de remise : 19 janvier 2024" />
