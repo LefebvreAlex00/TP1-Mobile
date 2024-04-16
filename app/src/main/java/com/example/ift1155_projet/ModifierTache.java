@@ -168,7 +168,7 @@ public class ModifierTache extends AppCompatActivity implements AdapterView.OnIt
        Adapter x = parent.getAdapter();
        Object y =x.getItem(0);
        String yString=y.toString();
-       if(yString.equals(getString(R.string.basse))){
+       if(yString.equals("Basse")||yString.equals("Low")){
            prio=position;
        }else{
            urgence= position==0;

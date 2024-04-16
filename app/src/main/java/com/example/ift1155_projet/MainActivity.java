@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements ClicRecycleListen
             });
         }
         for (Tache tache : taches) {
-            if (filtre1.equals(getString(R.string.tous))) {
+            if (filtre1.equals("Tous")||filtre1.equals("All")) {
 
                     tacheFiltrer.add(tache);
 
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements ClicRecycleListen
 
                     tacheFiltrer.add(tache);
 
-            } else if (filtre1.equals(getString(R.string.fermer)) && !tache.etat) {
+            } else if (filtre1.equals("Fermer") && !tache.etat|| filtre1.equals("Closed")&& !tache.etat) {
 
                     tacheFiltrer.add(tache);
 
@@ -106,19 +106,19 @@ public class MainActivity extends AppCompatActivity implements ClicRecycleListen
 
 
         for (Tache tache : tacheFiltrer) {
-            if (filtre2.equals(getString(R.string.tous))) {
+            if (filtre2.equals("Tous")||filtre2.equals("All")) {
                 if (addedIds.add(tache.id)) {
                     fullTacheFiltrer.add(tache);
                 }
-            } else if (filtre2.equals(getString(R.string.basse)) && tache.urgence == 0) {
+            } else if (filtre2.equals("Basse") && tache.urgence == 0 || filtre2.equals("Low") && tache.urgence == 0) {
                 if (addedIds.add(tache.id)) {
                     fullTacheFiltrer.add(tache);
                 }
-            } else if (filtre2.equals(getString(R.string.moyenne)) && tache.urgence == 1) {
+            } else if (filtre2.equals("Moyenne") && tache.urgence == 1||filtre2.equals("Average") && tache.urgence == 1 ) {
                 if (addedIds.add(tache.id)) {
                     fullTacheFiltrer.add(tache);
                 }
-            } else if (filtre2.equals(getString(R.string.haute)) && tache.urgence == 2) {
+            } else if (filtre2.equals("Haute") && tache.urgence == 2|| filtre2.equals("High") && tache.urgence == 2) {
                 if (addedIds.add(tache.id)) {
                     fullTacheFiltrer.add(tache);
                 }
